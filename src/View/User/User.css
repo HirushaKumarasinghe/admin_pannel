@@ -1,0 +1,41 @@
+.userMain {
+}
+.userMain hr {
+  border: solid 1px #8e44ad;
+}
+
+.userMain .title {
+  text-align: center;
+  color: #c0392b;
+}
+
+.userMain .subTitle {
+  text-align: left;
+  color: #8e44ad;
+}
+
+.user_addBtn {
+    float: right ;
+    margin: 15px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 15px;
+    background: linear-gradient(to right, #c0392b, #8e44ad)
+}
+
+.clienStats{
+margin-bottom: 55px;
+}
+
+.cs_container{    
+    background: linear-gradient(to right, #c0392b, #8e44ad);
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+}
+
+.addModel{
+    padding-top: 25px;
+}

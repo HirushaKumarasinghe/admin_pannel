@@ -1,0 +1,109 @@
+.Sidebar_main {
+  position: fixed;
+  width: 220px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #c0392bdd, #8e44addd),
+    url("/CSSImages/Common/Sidebar/back.jpg");
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sb_icon {
+  font-size: 70px;
+  color: #ffffff;
+  height: 100px;
+  padding: 15px;
+  text-align: center;
+}
+
+.sb_linkList {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+.sb_linkList .sb_linkItem {
+  display: block;
+}
+
+.sb_linkList .sb_linkItem::before {
+  width: 0%;
+  content: "";
+  height: 50px;
+  display: block;
+  background: linear-gradient(to right, #00000011, #00000022);
+  position: absolute;
+  transition-duration: 0.3s;
+  z-index: -5;
+}
+
+.sb_linkList .sb_linkItem:hover::before {
+  width: 100%;
+  border-right: solid 8px #8e44ad;
+}
+
+.sb_linkList .sb_linkItem a {
+  display: Block;
+  width: 100%;
+  padding-left: 15px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 50px;
+}
+
+.sb_linkList .sb_linkItem a:hover {
+  text-decoration: none;
+}
+
+.sb_sublist {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+.sb_sublist li a {
+  display: Block;
+  width: 100%;
+  padding-left: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+.sb_sublist li::before {
+  width: 0%;
+  content: "";
+  height: 30px;
+  display: block;
+  background: linear-gradient(to right, #00000011, #00000022);
+  position: absolute;
+  transition-duration: 0.3s;
+  z-index: -5;
+}
+
+.sb_sublist li:hover::before {
+  width: 100%;
+  border-right: solid 8px #8e44ad;
+}
+
+.sb_sublist li a:hover{
+    text-decoration: none;
+}
+
+.sb_sublistContainer{
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+
+
+.sb_sublistShow{
+    height: 120px;
+}
+
+.sb_sublistHide{
+    height: 0px;
+}
